@@ -167,7 +167,8 @@ const Checkout = ({ basketData, orderInfo, orderError, handleCheckout }) => {
         ...user,
         shippingOptions: options,
         shippingOption: { id: options[0].id },
-      });
+      
+      }); 
     };
 
     if (
@@ -187,6 +188,7 @@ const Checkout = ({ basketData, orderInfo, orderError, handleCheckout }) => {
     user.shippingSubdivision,
     previousShippingSubdivision,
   ]);
+  
 
   if (
     !user.shippingSubdivisions.length ||
