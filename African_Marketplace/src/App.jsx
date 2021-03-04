@@ -7,6 +7,8 @@ import Footer from "./components/Footer";
 import Products from "./components/Products";
 import Basket from "./components/Basket";
 import Checkout from "./components/Checkout";
+import { Login } from "./components/Login/login";
+
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -74,6 +76,7 @@ const App = () => {
 
   return (
     <Router>
+      <Login />
       <div>
         <CssBaseline />
         <NavBar
